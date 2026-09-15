@@ -1,0 +1,1080 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patel Bilal Husain | Grapheneboy</title>
+
+    <meta name="description"
+        content="Patel Bilal Husain, known online as Grapheneboy, is a digital creator focused on anime, gaming, Minecraft and original creative projects.">
+
+    <meta name="keywords"
+        content="Patel Bilal Husain, Grapheneboy, Grapheneboys, anime creator, gaming creator, Minecraft, anime">
+
+    <meta name="author" content="Patel Bilal Husain">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #030308;
+            color: white;
+            overflow-x: hidden;
+        }
+
+
+        /* =========================================
+           BACKGROUND GLOW
+        ========================================= */
+
+        body::before {
+            content: "";
+            position: fixed;
+
+            width: 550px;
+            height: 550px;
+
+            background: rgba(0, 220, 255, 0.10);
+
+            filter: blur(130px);
+
+            border-radius: 50%;
+
+            top: -200px;
+            right: -150px;
+
+            pointer-events: none;
+
+            z-index: -1;
+        }
+
+
+        body::after {
+            content: "";
+
+            position: fixed;
+
+            width: 450px;
+            height: 450px;
+
+            background: rgba(100, 0, 255, 0.09);
+
+            filter: blur(130px);
+
+            border-radius: 50%;
+
+            bottom: -180px;
+            left: -150px;
+
+            pointer-events: none;
+
+            z-index: -1;
+        }
+
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
+        nav {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            padding: 18px 7%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background: rgba(3, 3, 8, 0.75);
+
+            backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+
+            z-index: 1000;
+        }
+
+
+        .logo {
+            font-size: 23px;
+
+            font-weight: 900;
+
+            letter-spacing: 3px;
+        }
+
+
+        .logo span {
+            color: #00eaff;
+
+            text-shadow:
+                0 0 10px rgba(0,234,255,0.7),
+                0 0 25px rgba(0,234,255,0.4);
+        }
+
+
+        nav ul {
+            display: flex;
+
+            list-style: none;
+
+            gap: 30px;
+        }
+
+
+        nav a {
+            color: #ccc;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+
+        /* =========================================
+           HERO SECTION
+        ========================================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 120px 20px 70px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /*
+           HERO IMAGE
+
+           PUT YOUR MAIN IMAGE HERE:
+
+           images/hero.jpg
+
+           You can replace hero.jpg with your own
+           anime/Grapheneboy background.
+        */
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+                linear-gradient(
+                    rgba(3,3,8,0.55),
+                    rgba(3,3,8,0.90)
+                ),
+                url("images/hero.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            z-index: -2;
+
+            opacity: 0.75;
+        }
+
+
+        .hero-content {
+
+            max-width: 950px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .tag {
+
+            display: inline-block;
+
+            padding: 9px 20px;
+
+            border: 1px solid rgba(0,234,255,0.4);
+
+            border-radius: 50px;
+
+            color: #00eaff;
+
+            font-size: 12px;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 28px;
+
+            background: rgba(0,234,255,0.04);
+
+            box-shadow:
+                0 0 20px rgba(0,234,255,0.08);
+        }
+
+
+        h1 {
+
+            font-size: clamp(55px, 11vw, 130px);
+
+            line-height: 0.9;
+
+            font-weight: 1000;
+
+            letter-spacing: -6px;
+
+            text-transform: uppercase;
+        }
+
+
+        h1 span {
+
+            color: #00eaff;
+
+            text-shadow:
+                0 0 15px rgba(0,234,255,0.8),
+                0 0 45px rgba(0,234,255,0.4);
+        }
+
+
+        .hero p {
+
+            max-width: 700px;
+
+            margin: 32px auto;
+
+            color: #aaa;
+
+            line-height: 1.8;
+
+            font-size: 17px;
+        }
+
+
+        .hero p strong {
+
+            color: #00eaff;
+        }
+
+
+        /* =========================================
+           BUTTONS
+        ========================================= */
+
+        .buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 32px;
+        }
+
+
+        .btn {
+
+            padding: 15px 30px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .primary {
+
+            background: #00eaff;
+
+            color: #020205;
+
+            box-shadow:
+                0 0 25px rgba(0,234,255,0.15);
+        }
+
+
+        .primary:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 0 35px rgba(0,234,255,0.4);
+        }
+
+
+        .secondary {
+
+            border: 1px solid #333;
+
+            color: white;
+
+            background: rgba(255,255,255,0.02);
+        }
+
+
+        .secondary:hover {
+
+            border-color: #00eaff;
+
+            color: #00eaff;
+
+            transform: translateY(-4px);
+        }
+
+
+        /* =========================================
+           GENERAL SECTIONS
+        ========================================= */
+
+        section {
+
+            padding: 110px 7%;
+
+            position: relative;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            font-size: 45px;
+
+            margin-bottom: 15px;
+
+            letter-spacing: -1px;
+        }
+
+
+        .section-subtitle {
+
+            text-align: center;
+
+            color: #777;
+
+            margin-bottom: 55px;
+        }
+
+
+        /* =========================================
+           ABOUT
+        ========================================= */
+
+        .about {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .about p {
+
+            color: #aaa;
+
+            font-size: 18px;
+
+            line-height: 2;
+        }
+
+
+        .highlight {
+
+            color: #00eaff;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================================
+           CREATION CARDS
+        ========================================= */
+
+        .cards {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .card {
+
+            padding: 38px 27px;
+
+            border: 1px solid
+                rgba(255,255,255,0.08);
+
+            border-radius: 16px;
+
+            background:
+                rgba(255,255,255,0.025);
+
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-9px);
+
+            border-color:
+                rgba(0,234,255,0.4);
+
+            box-shadow:
+                0 15px 50px
+                rgba(0,0,0,0.3);
+        }
+
+
+        .card .icon {
+
+            font-size: 38px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .card h3 {
+
+            margin-bottom: 12px;
+
+            font-size: 23px;
+        }
+
+
+        .card p {
+
+            color: #888;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================
+           ANIME SECTION
+        ========================================= */
+
+        .anime-box {
+
+            max-width: 1050px;
+
+            min-height: 350px;
+
+            margin: auto;
+
+            padding: 60px 35px;
+
+            border-radius: 22px;
+
+            text-align: center;
+
+            border:
+                1px solid rgba(0,234,255,0.15);
+
+            background:
+
+                linear-gradient(
+                    rgba(3,3,8,0.65),
+                    rgba(3,3,8,0.88)
+                ),
+
+                url("images/anime.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        .anime-box h3 {
+
+            font-size: clamp(35px, 6vw, 65px);
+
+            margin-bottom: 15px;
+
+            letter-spacing: 2px;
+
+            text-shadow:
+                0 0 20px rgba(0,0,0,0.8);
+        }
+
+
+        .anime-box p {
+
+            color: #bbb;
+
+            max-width: 700px;
+
+            margin: auto;
+
+            line-height: 1.8;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================================
+           SOCIAL
+        ========================================= */
+
+        .socials {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .social {
+
+            padding: 16px 28px;
+
+            border: 1px solid #292929;
+
+            border-radius: 9px;
+
+            color: white;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+            background:
+                rgba(255,255,255,0.02);
+        }
+
+
+        .social:hover {
+
+            color: #00eaff;
+
+            border-color: #00eaff;
+
+            transform: translateY(-4px);
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+
+            padding: 40px 20px;
+
+            text-align: center;
+
+            border-top:
+                1px solid rgba(255,255,255,0.08);
+
+            color: #666;
+
+            font-size: 14px;
+        }
+
+
+        footer strong {
+
+            color: #00eaff;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 750px) {
+
+            nav {
+
+                padding: 17px 5%;
+            }
+
+
+            nav ul {
+
+                gap: 12px;
+            }
+
+
+            nav a {
+
+                font-size: 11px;
+            }
+
+
+            .cards {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            h1 {
+
+                letter-spacing: -3px;
+            }
+
+
+            section {
+
+                padding: 80px 5%;
+            }
+
+
+            .section-title {
+
+                font-size: 35px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <nav>
+
+        <div class="logo">
+            GRAPHENE<span>BOY</span>
+        </div>
+
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#anime">Anime</a>
+            </li>
+
+            <li>
+                <a href="#social">Social</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section
+        class="hero"
+        id="home">
+
+        <div class="hero-content">
+
+
+            <div class="tag">
+                DIGITAL CREATOR
+            </div>
+
+
+            <h1>
+                GRAPHENE<span>BOY</span>
+            </h1>
+
+
+            <p>
+
+                <strong>Patel Bilal Husain</strong>,
+                known online as
+                <strong>Grapheneboy</strong>.
+
+                Creating anime, gaming content,
+                Minecraft videos and original
+                creative projects.
+
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="#about"
+                    class="btn primary">
+
+                    Explore
+
+                </a>
+
+
+                <a
+                    href="#social"
+                    class="btn secondary">
+
+                    Follow Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+    ========================================== -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+
+        <p class="section-subtitle">
+            The person behind Grapheneboy
+        </p>
+
+
+        <div class="about">
+
+            <p>
+
+                <span class="highlight">
+                    Patel Bilal Husain
+                </span>,
+
+                known online as
+
+                <span class="highlight">
+                    Grapheneboy
+                </span>,
+
+                is an aspiring digital creator
+                interested in anime, gaming,
+                Minecraft and creative digital projects.
+
+            </p>
+
+
+            <br>
+
+
+            <p>
+
+                Grapheneboy is a personal creator
+                identity built around imagination,
+                gaming and original digital worlds.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHAT I CREATE
+    ========================================== -->
+
+    <section>
+
+        <h2 class="section-title">
+            What I Create
+        </h2>
+
+
+        <p class="section-subtitle">
+            Welcome to the Grapheneboy universe
+        </p>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ⚔️
+                </div>
+
+                <h3>
+                    Anime
+                </h3>
+
+                <p>
+
+                    Original anime concepts,
+                    characters, stories and
+                    cinematic ideas.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🎮
+                </div>
+
+                <h3>
+                    Gaming
+                </h3>
+
+                <p>
+
+                    Minecraft adventures,
+                    PvP moments, gameplay
+                    and gaming content.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Creative
+                </h3>
+
+                <p>
+
+                    Digital experiments,
+                    visual concepts and
+                    original creative projects.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         GRAPHENEBOYS ANIME
+    ========================================== -->
+
+    <section id="anime">
+
+        <h2 class="section-title">
+            Grapheneboys
+        </h2>
+
+
+        <p class="section-subtitle">
+            An original anime universe
+        </p>
+
+
+        <div class="anime-box">
+
+
+            <h3>
+                CHAPTER 1
+            </h3>
+
+
+            <p>
+
+                Enter the world of Grapheneboys —
+                an original cinematic anime project
+                created under the Grapheneboy brand.
+
+            </p>
+
+
+            <a
+                href="#social"
+                class="btn primary">
+
+                Follow The Journey
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SOCIAL
+    ========================================== -->
+
+    <section id="social">
+
+        <h2 class="section-title">
+            Find Me
+        </h2>
+
+
+        <p class="section-subtitle">
+            Follow Grapheneboy online
+        </p>
+
+
+        <div class="socials">
+
+
+            <!-- YOUR REAL YOUTUBE LINK -->
+
+            <a
+                class="social"
+                href="https://www.youtube.com/@MR.graphene"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                ▶ YouTube
+
+            </a>
+
+
+
+            <!--
+                INSTAGRAM
+
+                Replace the # below with your
+                real Instagram profile link.
+
+                Example:
+                https://www.instagram.com/grapheneboy/
+            -->
+
+            <a
+                class="social"
+                href="https://www.instagram.com/grapheneboy?stkn=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer">
+
+                ◎ Instagram
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        © 2026
+
+        <strong>
+            Patel Bilal Husain
+        </strong>
+
+        · Grapheneboy
+
+    </footer>
+
+
+</body>
+
+</html>
+```
